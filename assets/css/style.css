@@ -473,10 +473,10 @@ body.menu-open .menu-backdrop { opacity: 1; visibility: visible; }
 .qr-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; }
 .qr-card { background: rgba(255,255,255,.04); border: 1px solid rgba(255,255,255,.1); border-radius: var(--radius); padding: 24px; text-align: center; transition: transform .35s var(--ease), background .35s; }
 .qr-card:hover { transform: translateY(-6px); background: rgba(255,255,255,.07); }
-.qr-card__img { background: #fff; border-radius: 14px; padding: 12px; width: 152px; height: 152px; margin: 0 auto 16px; }
+.qr-card__img { background: #fff; border-radius: 14px; padding: 12px; width: 100%; max-width: 152px; aspect-ratio: 1 / 1; margin: 0 auto 16px; }
 .qr-card__img img { width: 100%; height: 100%; object-fit: contain; }
-.qr-card h4 { color: #fff; font-size: 1.05rem; }
-.qr-card .handle { color: var(--gold-light); font-size: .86rem; margin-top: 4px; font-family: var(--font-latin); letter-spacing: .04em; }
+.qr-card h4 { color: #fff; font-size: 1.05rem; overflow-wrap: anywhere; }
+.qr-card .handle { color: var(--gold-light); font-size: .86rem; margin-top: 4px; font-family: var(--font-latin); letter-spacing: .04em; overflow-wrap: anywhere; }
 
 /* contact strip */
 .contact-strip { display: flex; flex-wrap: wrap; gap: 14px 40px; justify-content: center; margin-top: 44px; padding-top: 36px; border-top: 1px solid rgba(255,255,255,.12); }
@@ -610,6 +610,9 @@ body.menu-open .menu-backdrop { opacity: 1; visibility: visible; }
   .dept__index { font-size: 2.6rem; }
   .footer-top { grid-template-columns: 1fr; gap: 34px; }
   .contact-strip { gap: 12px 22px; }
-  .qr-grid { grid-template-columns: 1fr 1fr; gap: 16px; }
-  .qr-card__img { width: 130px; height: 130px; }
+  .qr-grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+  .qr-card { padding: 16px 10px; min-width: 0; }
+  .qr-card__img { max-width: 130px; padding: 10px; }
+  .qr-card h4 { font-size: .96rem; }
+  .qr-card .handle { font-size: .78rem; }
 }

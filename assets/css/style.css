@@ -615,4 +615,14 @@ body.menu-open .menu-backdrop { opacity: 1; visibility: visible; }
   .qr-card__img { max-width: 130px; padding: 10px; }
   .qr-card h4 { font-size: .96rem; }
   .qr-card .handle { font-size: .78rem; }
+  /* hero */
+  .hero { min-height: 88vh; padding-top: calc(var(--header-h) + 26px); padding-bottom: 54px; }
+  .hero__crest { width: 74px; margin-bottom: 16px; }
+  .hero__eyebrow { font-size: 11px; letter-spacing: .22em; margin-bottom: 16px; }
+  .hero__desc { font-size: 1rem; line-height: 1.85; margin-top: 20px; }
+  .hero__actions { flex-direction: column; align-items: center; gap: 14px; margin-top: 30px; }
+  .hero__actions .btn { width: 100%; max-width: 300px; }
+}
+@media (max-width: 768px) {
+  .hero__scroll { display: none; }
 }
